@@ -110,6 +110,8 @@ class Mcrypt implements SymmetricInterface
      */
     public function __construct($options = [])
     {
+        trigger_error('use openssl instead of mcrypt', E_USER_DEPRECATED);
+
         if (!extension_loaded('mcrypt')) {
             throw new Exception\RuntimeException(
                 'You cannot use ' . __CLASS__ . ' without the Mcrypt extension'

@@ -27,6 +27,7 @@ class SymmetricPluginManager implements ContainerInterface
      */
     protected $symmetric = [
         'mcrypt' => Symmetric\Mcrypt::class,
+        'openssl' => Symmetric\Openssl::class,
     ];
 
     /**
