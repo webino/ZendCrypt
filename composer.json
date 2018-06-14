@@ -1,5 +1,5 @@
 {
-    "name": "zendframework/zend-crypt",
+    "name": "webino/zend-crypt",
     "description": " ",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -11,6 +11,9 @@
         "psr-4": {
             "Zend\\Crypt\\": "src/"
         }
+    },
+    "replace": {
+      "zendframework/zend-crypt": "self.version"
     },
     "require": {
         "php": "^5.5 || ^7.0",
